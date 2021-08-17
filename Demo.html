@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+
+    <style>
+        header {
+            background-color: blue;
+            height: 100px;
+        }
+        
+        #menu {
+            height: 50px;
+            margin-top: 20px;
+            text-decoration: none;
+            display: flex;
+            background-color: gray;
+        }
+        
+        #menu ul {
+            display: flex;
+            list-style-type: none;
+            text-align: center;
+        }
+        
+        #menu ul li {
+            display: inline-table;
+            width: auto;
+            line-height: 30px;
+            position: relative;
+        }
+        
+        #menu ul li a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            justify-content: space-around;
+        }
+        
+        #menu ul li a:hover {
+            background-color: red;
+        }
+        
+        #menu ul li>.sub-menu {
+            display: none;
+            position: absolute;
+        }
+        
+        #menu ul li:hover .sub-menu {
+            display: block;
+        }
+        
+        nav div {
+            margin-top: 30px;
+            width: 100% px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <nav>
+        <div id="menu">
+            <ul>
+                <li><a href="#">ĐIỆN THOẠI</a></li>
+                <li><a href="#">TABLET</a></li>
+                <li><a href="#">PHỤ KIỆN</a></li>
+                <li><a href="#">ĐỒNG HỒ</a></li>
+                <li>
+                    <a href="#">ÂM THANH</a>
+                    <ul id="sub-menu">
+                        <li><a href="#">Loa</a></li>
+                        <li><a href="#">Loa vi tính</a></li>
+                        <li><a href="#">Loa Bluetooth</a></li>
+                        <li><a href="#">Loa kéo</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">LAPTOP</a></li>
+                <li><a href="#">SIM THẺ</a></li>
+                <li><a href="#">HÀNG CŨ</a></li>
+                <li><a href="#">TRẢ GÓP</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <section>
+        <div style="width: 300px; height: 500px;">
+            <div>
+                <img src="./surface-shgw5LWCybI-unsplash.jpg" alt="ảnh minh họa sản phẩm" width="100px " height="100px">
+                <p>Galaxy note 10</p>
+            </div>
+            <div>
+                <img src="./surface-shgw5LWCybI-unsplash.jpg" alt="ảnh minh họa sản phẩm" width="100px " height="100px">
+                <p>Galaxy note 10</p>
+            </div>
+            <div>
+                <img src="./surface-shgw5LWCybI-unsplash.jpg" alt="ảnh minh họa sản phẩm" width="100px " height="100px">
+                <p>Galaxy note 10</p>
+            </div>
+        </div>
+        <div style="right: 80px; width: ;">
+            <div>
+                <img src="./surface-shgw5LWCybI-unsplash.jpg" alt="ảnh minh họa sản phẩm" width="100px " height="100px">
+                <p>Galaxy note 10</p>
+            </div>
+            <div>
+                <img src="./surface-shgw5LWCybI-unsplash.jpg" alt="ảnh minh họa sản phẩm" width="100px " height="100px">
+                <p>Galaxy note 10</p>
+            </div>
+            <div>
+                <img src="./surface-shgw5LWCybI-unsplash.jpg" alt="ảnh minh họa sản phẩm" width="100px " height="100px">
+                <p>Galaxy note 10</p>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

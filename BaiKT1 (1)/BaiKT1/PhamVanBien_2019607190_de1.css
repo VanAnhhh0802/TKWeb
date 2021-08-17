@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    border: 1px solid green;
+}
+
+header .img {
+    width: 70px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    line-height: 150px;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid green;
+    background-color: #FFCCFF;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    line-height: 50px;
+}
+
+nav ul li {
+    height: 50px;
+    width: 25%;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul li:hover {
+    color: red;
+    background-color: #66FFFF;
+}
+
+.subnav {
+    position: relative;
+}
+
+.con {
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: #FFCCFF;
+}
+
+.con li {
+    justify-content: space-around;
+    width: 200px;
+    border: 1px solid crimson;
+    width: 100%;
+}
+
+.subnav:hover .con {
+    display: block;
+}
+
+section {
+    height: 800px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+section .P1 {
+    width: 100%;
+}
+
+section .P2 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+section .DS {
+    display: flex;
+}
+
+section .DS li {
+    list-style: none;
+    height: 30px;
+    border-radius: 50px;
+    margin-left: 20px;
+    width: 500px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid crimson;
+}
+
+section .DS li:hover {
+    background-color: crimson;
+    color: #fff;
+}
+
+section .DS1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+section .DS1 li {
+    list-style: none;
+    text-align: center;
+}
+
+section .tensanpham {
+    color: #000066;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+section .tensanpham:hover {
+    color: #00A69B;
+    font-size: 20px;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}

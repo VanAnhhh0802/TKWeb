@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 - Phiếu 6</title>
+</head>
+
+<body>
+
+    <table border="1" cellpadding="5px" style="border-collapse: collapse; background-color: violet;">
+        <tr>
+            <td colspan="2">Chương trình tra tuổi</td>
+        </tr>
+        <tr>
+            <td>Tuổi dương lịch</td>
+            <td>
+                <p id="duonglich">Kết quả</p>
+            </td>
+        </tr>
+        <tr>
+            <td>Tuổi âm lịch</td>
+            <td>
+                <input type="number" id="amlich" name="amlich">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <button type="reset">Xóa</button>
+                <button onclick="tracuu()">Tra cứu</button>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        var can = ["Canh", "Tân", "Nhâm", "Quý", "Giáp", "Ất", "Bính", "Đinh", "Mậu", "Kỷ"]
+        var chi = ["Thân", "Dậu", "Tuất", "Hợi", "Tý", "Sửu", "Dần", "Mão", "Thìn", "Tỵ", "Ngọ", "Mùi"]
+
+        function tracuu() {
+            var tmp = document.getElementById("amlich");
+            var x = parseInt(tmp.value);
+            var tmpcan = can[x % 10];
+            var tmpchi = chi[parseInt(x % 100) % 12];
+            document.getElementById("duonglich").innerHTML = tmpcan + " " + tmpchi;
+        }
+    </script>
+</body>
+
+</html>

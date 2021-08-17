@@ -1,0 +1,44 @@
+div {
+    width: 900px;
+    height: 50px;
+}
+
+#menu ul {
+    background-color: blue;
+    list-style-type: none;
+    text-align: center;
+}
+
+#menu ul li {
+    color: white;
+    display: inline-table;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#menu ul li a:hover {
+    background-color: red;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-small {
+    display: none;
+    position: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+#menu ul li:hover .menu-small {
+    display: block;
+    display: flex;
+}

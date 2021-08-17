@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1- Phiếu 2</title>
+</head>
+
+<body>
+    <p>Giải phương trình bậc 2 có dang ax<sup>2</sup> +bx + c =0 với a= 4, b= 6, c= 2</p>
+    <p>Nhấn để xem kết quả</p>
+    <button onclick="myFunction() ">Click here</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var a = 6;
+            var b = 4;
+            var c = 2;
+            var x1, x2;
+            var delta = b * b - 4 * a * c;
+
+            if (delta == 0) {
+                alert("Phương trình có 1 nghiệm duy nhất là" - b / (2 * a));
+            } else if (delta > 0) {
+                alert("x1 = " + (-b - math.sqrt(delta)) / (2 * a));
+                alert("x2 = " + (-b + math.sqrt(delta)) / (2 * a));
+            } else {
+                alert("Vô nghiệm");
+            }
+            document.getElementById("demo").innerHTML = "";
+
+        }
+    </script>
+</body>
+
+</html>

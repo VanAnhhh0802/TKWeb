@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Phiếu 2 - Bài 2</title>
+</head>
+
+<body>
+    <button onclick="Bam(1)">1</button>
+    <button onclick="Bam(2)">2</button>
+    <button onclick="Bam(3)">3</button>
+    <button onclick="Bam(4)">4</button>
+    <button onclick="Bam(5)">5</button>
+    <button onclick="Cong()">+</button>
+    <br>
+    <button onclick="Bam(6)">6</button>
+    <button onclick="Bam(7)">7</button>
+    <button onclick="Bam(8)">8</button>
+    <button onclick="Bam(9)">9</button>
+    <button onclick="Bam(0)">0</button>
+    <button onclick="tinh()">=</button>
+    <br>
+    <br>
+    <span>Kết quả :</span>
+    <span id="kq"></span>
+
+    <script>
+        var sum = 0;
+        var a = 0;
+
+        function Bam(x) {
+            a = x;
+        }
+
+        function tinh() {
+            var kq = document.getElementById("kq");
+            kq.textContent = sum + a;
+            sum = 0;
+            a = 0;
+        }
+
+        function Cong() {
+            sum += a;
+        }
+    </script>
+</body>
+
+</html>

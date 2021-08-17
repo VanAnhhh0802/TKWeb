@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 2 phiếu 1</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var a = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+        var n = a.length;
+
+        function dem(a, n, x) {
+            var dem = 0;
+            for (var i = 0; i < n; i++) {
+                if (a[i] == x) {
+                    dem++;
+                }
+            }
+            return dem;
+        }
+
+        function XuLy(a, n) {
+            var tg, tmp = dem(a, n, a[0]),
+                index = 0;
+            for (var i = 1; i < n; i++) {
+                tg = dem(a, n, a[i]);
+                if (tg > tmp) {
+                    tmp = tg;
+                    index = i;
+                }
+            }
+            return a[index] + " " + "(" + dem(a, n, a[index]) + "times)";
+        }
+        document.getElementById("demo").innerHTML = "KQ: " + XuLy(a, n);
+    </script>
+</body>
+
+</html>

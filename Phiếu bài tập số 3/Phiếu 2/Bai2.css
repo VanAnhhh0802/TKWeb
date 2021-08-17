@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body {
+    background-color: #A06D21;
+    color: white;
+    background-image: url(./Bi-mat-ve-Van-Ly-Truong-Thanh---buc-tuong-phong-thu-lon-nhat-Trung-Quoc-vltt-01-1560679140-width702height367.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: Tahoma;
+}
+
+h1 {
+    text-align: center;
+    color: #FFCC00;
+}

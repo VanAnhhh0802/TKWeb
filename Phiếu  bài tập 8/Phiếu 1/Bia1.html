@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 phiếu 8</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+
+    <script>
+        var arr = [3, 8, 7, 6, 5, -4, -3, 2, 1];
+
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = i + 1; j < arr.length; j++) {
+                if (arr[i] > arr[j]) {
+                    var tg = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = tg;
+                }
+            }
+        }
+        document.getElementById("demo").innerHTML = "Mảng sau khi sắp xếp là : " + arr;
+    </script>
+</body>
+
+</html>

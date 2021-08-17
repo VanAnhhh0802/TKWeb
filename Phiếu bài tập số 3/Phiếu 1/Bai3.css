@@ -1,0 +1,21 @@
+@charset "UTF-8";
+div {
+    background-color: #FFFFCC;
+    text-align: center;
+}
+
+p.one {
+    color: blue;
+}
+
+p.two {
+    color: red;
+}
+
+p.three {
+    color: green;
+}
+
+hr {
+    width: 300px;
+}

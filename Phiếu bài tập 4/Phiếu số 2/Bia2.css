@@ -1,0 +1,28 @@
+#menu ul {
+    text-align: center;
+    list-style-type: none;
+    background-color: blue;
+}
+
+#menu ul li a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: red;
+}
+
+#menu ul li {
+    display: inline-table;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+div {
+    width: 900px;
+}

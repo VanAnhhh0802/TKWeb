@@ -1,0 +1,23 @@
+h1 {
+    border-bottom: inset 3px black;
+    background-color: coral;
+    color: black;
+}
+
+thead {
+    color: white;
+    background-color: orange;
+}
+
+table {
+    border: 1px solid orange;
+    border-collapse: collapse;
+}
+
+th {
+    border: 1px solid orange;
+}
+
+td {
+    border: 1px solid orange;
+}

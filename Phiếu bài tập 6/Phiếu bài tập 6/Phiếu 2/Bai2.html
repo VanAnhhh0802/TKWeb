@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2 phiếu 2</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><input type="button" value="1" onclick="x(1)"></td>
+            <td><input type="button" value="2" onclick="x(2)"></td>
+            <td><input type="button" value="3" onclick="x(3)"></td>
+            <td><input type="button" value="4" onclick="x(4)"></td>
+            <td><input type="button" value="5" onclick="x(5)"></td>
+            <td><input type="button" value="-" onclick="sub()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="6" onclick="x(6)"></td>
+            <td><input type="button" value="7" onclick="x(7)"></td>
+            <td><input type="button" value="8" onclick="x(8)"></td>
+            <td><input type="button" value="9" onclick="x(9)"></td>
+            <td><input type="button" value="0" onclick="x(0)"></td>
+            <td><input type="button" value="=" onclick="tinh()"></td>
+        </tr>
+    </table>
+    <br>
+    <span>Kết quả</span>
+    <span id="ketqua"></span>
+    <script>
+        var hieu = 0;
+        var a = 0;
+
+        function x(b) {
+            a = b;
+        }
+
+        function sub() {
+            hieu += a;
+        }
+
+        function tinh() {
+            document.getElementById("ketqua");
+            ketqua.textContent = hieu - a;
+            hieu = 0;
+            a = 0;
+        }
+    </script>
+</body>
+
+</html>

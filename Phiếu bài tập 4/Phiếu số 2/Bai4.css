@@ -1,0 +1,29 @@
+div {
+    width: 200px;
+    height: 50px;
+}
+
+#menu ul {
+    background-color: blue;
+    color: white;
+    list-style-type: none;
+    text-align: left;
+}
+
+#menu ul li {
+    border-bottom: 1px solid white;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+#menu ul li:hover {
+    background-color: red;
+    text-decoration: none;
+}
